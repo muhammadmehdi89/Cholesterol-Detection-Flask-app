@@ -4,7 +4,7 @@ from PIL import UnidentifiedImageError
 from tensorflow.keras.models import load_model
 import numpy as np
 from flask import Flask, render_template, request
-import cv2
+
 
 
 moyconfig = r"--psm 6 --oem 3"
@@ -13,10 +13,10 @@ target_phrases = ["HDL-CHOLESTEROL", "LDL-CHOLESTEROL", "TRIGLYCERIDES"]
 
 def perform_ocr(image_path):
     # Load the image
-    img = cv2.imread(image_path)
+    #img = cv2.imread(image_path)
 
     # Perform OCR on the image
-    cropped_text = pytesseract.image_to_string(img, config=moyconfig)
+    cropped_text = pytesseract.image_to_string(PIL.Image.open(image_path), config=moyconfig)
 
     # Split the extracted text
     text = cropped_text.split()
