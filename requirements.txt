@@ -9,5 +9,5 @@ numpy==1.26.4
 opencv-python==4.5.5.62
 Pillow==9.0.0  # PIL library
 pytesseract==0.3.9
-tensorflow==2.16.1
+tensorflow
 Werkzeug==3.0.1
