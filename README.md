@@ -7,6 +7,8 @@ The objective of this project is to develop a lipid-profile medical report asses
 2. Used Deep Neural Network(DNN) for predictions of multiple classes: High Cholesterol, Boderline Cholesterol, and Normal Cholesterol and achieve accuracy of more than 95%.
 3. Personalized health recommendations: Tailoring exercise regimens, medication suggestions and prescriptions based on individual health data.
 
+### Note:
+Currently, this model is only applicable to Dow Lab Lipid-Profile Reports. However, I aim to expand its applicability to other labs in the future and incorporate additional diseases into the application.
 
 ## Model Architecture:
 
